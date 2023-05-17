@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --yellow: hsl(71, 73%, 54%);
+  --gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Karla", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gray);
+  font-size: 16px;
+}
+.content {
+  width: 700px;
+}
+
+.content .top-card {
+  background-color: white;
+  padding: 30px;
+}
+.top-card h1 {
+  color: var(--cyan);
+  padding-bottom: 20px;
+}
+.top-card .green {
+  color: var(--yellow);
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+.top-card .gray {
+  color: var(--grayish-blue);
+  padding-bottom: 10px;
+}
+
+.content .bottom-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.content .bottom-card .left-side {
+  padding: 30px;
+  background-color: var(--cyan);
+}
+.title {
+  color: var(--gray);
+  padding-bottom: 20px;
+}
+.content .bottom-card .left-side .title {
+  padding-bottom: 18px;
+}
+.content .bottom-card .left-side .price {
+  color: #65d3cd;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 8px;
+}
+.content .bottom-card .left-side .price span {
+  font-size: 35px;
+  padding-right: 10px;
+  font-weight: 700;
+  color: var(--gray);
+}
+.content .bottom-card .left-side .access {
+  color: var(--gray);
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 40px;
+}
+.content .bottom-card .left-side .a {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.content .bottom-card .left-side a {
+  background-color: var(--yellow);
+  border-radius: 12px;
+  padding: 16px 100px;
+  text-decoration: none;
+  color: var(--gray);
+}
+
+.content .bottom-card .right-side {
+  background-color: #4abebd;
+  padding: 30px;
+  color: #a6ebed;
+}
+
+.top-card {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.left-side {
+  border-bottom-left-radius: 12px;
+}
+.right-side {
+  border-bottom-right-radius: 12px;
+}
